@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 
     private static void EndGame(GameObject[] values)
     {
+        Time.timeScale = 0f;
         foreach (GameObject condition in values)
         {
             condition.SetActive(true);
